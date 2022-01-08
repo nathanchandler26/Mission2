@@ -1,0 +1,19 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+    /*This will give the text and picture some breathing room on the page from the left side*/
+}
+
+label {
+    font-size: 20px;
+    color: cornflowerblue;
+    width: 150px;
+    display: inline-block;
+    /* Put this display one if the width isn't working*/
+}
+
+
+li {
+    list-style-type: none;
+}
+
