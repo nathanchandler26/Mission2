@@ -6,9 +6,9 @@
     var pctIntex = parseInt($("#pctINTEX").val());
     // These set these values equal to the inputed values
     var total = (pctAssignments + pctGroupProject + pctQuizzes + pctExams + pctIntex);
-    // This adds up all the percents to get the final percent and assigns it to the varialbe "total"
+    // This adds up all the percents to get the final percent and assigns it to the variable "total"
     let letter = "";
-    // Making a letter variable to assign for the ltter grate
+    // Making a letter variable to assign for the letter grade
     if (total < 60) {
         letter = "E"
     }
