@@ -25,5 +25,5 @@ namespace Mission2
             app.UseStaticFiles(); // This allows the program to access the static files. This has to go after default files.
         }
     }
-}
+} 
 
