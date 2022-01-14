@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h4>Grade Calculator</h4>
+<p>Enter your percentage score for each category without a percentage or decimal. For example, 40% or .4 would be entered as "40".</p>
+<form>
+    <label>Assignments</label>
+    <input id="pctAssignments" /><br />
+    <label>Group Project</label>
+    <input id="pctGroupProject" /><br />
+    <label>Quizzes</label>
+    <input id="pctQuizzes" /><br />
+    <label>Exams</label>
+    <input id="pctExams" /><br />
+    <label>INTEX</label>
+    <input id="pctINTEX" /><br />
+    <input id="btnCalculate" type="button" value="Calculate" onclick="addNumbers()" />
+    <!-- This above line will add up the percentages when the button is clicked using the js function created.-->
+</form>

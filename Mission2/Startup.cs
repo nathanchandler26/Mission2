@@ -16,13 +16,28 @@ namespace Mission2
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDefaultFiles(); // This line makes it so you don't have to manually type in /index.html at the end. It takes you straight to your page
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+
+            // app.UseDefaultFiles(); // This line makes it so you don't have to manually type in /index.html at the end. It takes you straight to your page
             app.UseStaticFiles(); // This allows the program to access the static files. This has to go after default files.
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
+                );
+            });
         }
     }
 } 

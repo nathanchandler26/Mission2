@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <title>Mission #2</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!--This line puts in a symbol for my favorite emoji on the tab-->
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+</body>
+</html>
