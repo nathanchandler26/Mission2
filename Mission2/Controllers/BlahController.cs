@@ -14,13 +14,14 @@ namespace Mission2.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpGet("GradeCalculator")]
+
         public IActionResult GradeCalculator()
         {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("GradeCalculator")]
 
         public IActionResult GradeCalculator (GradeCalculatorModel model)
         {

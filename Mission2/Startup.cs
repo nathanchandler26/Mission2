@@ -27,7 +27,6 @@ namespace Mission2
                 app.UseDeveloperExceptionPage();
             }
 
-
             // app.UseDefaultFiles(); // This line makes it so you don't have to manually type in /index.html at the end. It takes you straight to your page
             app.UseStaticFiles(); // This allows the program to access the static files. This has to go after default files.
             app.UseRouting();
